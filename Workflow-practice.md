@@ -7,18 +7,33 @@ output:
     keep_md: true
 ---
 
-```{r, eval = TRUE}
+
+```r
 ## insert actual code here
 data1 = c(2, 5, 3, 6, 8, 12, 9, 25, 8, 10, 16)
 mean(data1)
+```
+
+```
+## [1] 9.454545
+```
+
+```r
 sd(data1)
+```
+
+```
+## [1] 6.51711
+```
+
+```r
 sum(data1)
+```
 
+```
+## [1] 104
 ```
 
 
 
-```{r setup, include=FALSE, cache = FALSE}
-knitr::opts_chunk$set(error = TRUE)
 
-```
