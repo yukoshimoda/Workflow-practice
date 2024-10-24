@@ -365,6 +365,117 @@ mean(data1)</code></pre>
 <pre><code>## [1] 6.51711</code></pre>
 <pre class="r"><code>sum(data1)</code></pre>
 <pre><code>## [1] 104</code></pre>
+<div id="r-markdown" class="section level2">
+<h2>R Markdown</h2>
+<p>This is an R Markdown practice document. R Markdown is a simple
+formatting syntax for authoring HTML, PDF, and MS Word documents. For
+more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<div id="text-formatting" class="section level3">
+<h3>Text formatting</h3>
+<p>Document can be formatted by syntax for header<br />
+- # Header 1 (main title)<br />
+- ## Header 2 (section)<br />
+- ### Header 3 (subsection)<br />
+</p>
+<p>Text can be emphasized by using italic, bold, strikethrough, or
+subscript:<br />
+- <em>italic</em> or <em>italic</em><br />
+- <strong>bold</strong> or <strong>bold</strong><br />
+- ~~ strikethrough~~<br />
+- text<sup>superscript</sup><br />
+- text<sub>subscript</sub><br />
+</p>
+<p>Breaks in R Markdown include<br />
+- Line break—to start a new line. Implemented by ending the previous
+line with a backslash<br />
+- Paragraph break—to start a new paragraph. Implemented by ending the
+previous paragraph with two spaces.<br />
+- Slide break—to start a new slide in the slide-based output formats
+(presentations) or a new section in all the other formats. Implemented
+by inserting a horizontal rule (***) into the document.<br />
+- Page break—to start a new page, in those output formats where it’s
+applicable, e.g., in Microsoft Word. Implemented by inserting the
+command newpage into the document.<br />
+</p>
+<p>When you click the <strong>Knit</strong> button a document will be
+generated that includes both content as well as the output of any
+embedded R code chunks within the document. You can embed an R code
+chunk like this:</p>
+<pre class="r"><code>print(&quot;Practicing code chunk&quot;)</code></pre>
+<pre><code>## [1] &quot;Practicing code chunk&quot;</code></pre>
+<pre class="r"><code>summary(cars)</code></pre>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
+<p>Rmarkdown is not limited to using only R, but also supports other
+programming language (see the code chunk drop down) also name each code
+chunks NOTE: need to install python</p>
+<pre class="r"><code>print(&quot;Hello, World!&quot;)</code></pre>
+<pre><code>## [1] &quot;Hello, World!&quot;</code></pre>
+</div>
+</div>
+<div id="code-chunk-options---this-information-comes-from-r-markdown-tutorial-for-beginners-in-data-camp" class="section level2">
+<h2>Code Chunk options - this information comes from R Markdown Tutorial
+for beginners in Data Camp</h2>
+<p>echo=FALSE: the code itself will not be shown in the final document,
+only its outputs.<br />
+eval=FALSE: the code in the code chunk will not be run.<br />
+include=FALSE: the code chunk will be run but not included in the final
+document.<br />
+results: the default value is “markup”; other values are:<br />
+“hide”: the code output will be hidden in the final document<br />
+“hold”: the code output will be shown with a delay, only after the whole
+code chunk is executed<br />
+“asis”: the code output will be passed through without
+reformatting.<br />
+message=FALSE: the messages produced by the code will not be
+shown.<br />
+error=FALSE: the errors produced by the code will not be shown.<br />
+warning=FALSE: the warnings produced by the code will not be
+shown.<br />
+highlight=FALSE: the code will not be highlighted in the final
+document.<br />
+prompt=TRUE: the &gt; symbol will be added at the beginning of each code
+line shown in the final document.<br />
+</p>
+<pre><code>## [1] &quot;Practicing code chunk&quot;</code></pre>
+</div>
+<div id="including-plots" class="section level2">
+<h2>Including Plots</h2>
+<div id="customize-plots-in-r-marcdown-using-chunk-options" class="section level3">
+<h3>Customize plots in R Marcdown using chunk options</h3>
+<p>fig.show: the default value is “asis”; other values are:<br />
+“hide”: the plots will be generated but not included in the final
+document<br />
+“hold”: the plots will be shown with a delay, only after the whole code
+chunk is executed<br />
+“animate”—all the plots of the code chunk will be combined into an
+animation.<br />
+fig.width: the plot width in inches, 7 by default.<br />
+fig.height: the plot height in inches, 7 by default.<br />
+fig.align: the way of aligning plots in the final document, can be
+“left”, “center”, or “right”.<br />
+fig.cap: a figure caption represented by a character string.<br />
+fig.path: a path to the directory where the plot files created by the
+code chunk should be stored.<br />
+fig.ext: the extension of the plot files created by the code
+chunk.<br />
+</p>
+<pre class="r"><code>plot(pressure)</code></pre>
+<div class="float">
+<img src="data:image/png;base64,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" alt="Fig.1. Vapor Pressure of Mercury as a Function of Temperature" />
+<div class="figcaption">Fig.1. Vapor Pressure of Mercury as a Function
+of Temperature</div>
+</div>
+<p>Note that the <code>echo = FALSE</code> parameter was added to the
+code chunk to prevent printing of the R code that generated the
+plot.</p>
+</div>
+</div>
 
 
 
