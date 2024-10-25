@@ -75,8 +75,6 @@ print("Practicing code chunk")
 ```
 
 ## Including Plots
-
-
 ### Customize plots in R Marcdown using chunk options
 fig.show: the default value is "asis"; other values are:\
   "hide": the plots will be generated but not included in the final document\
@@ -92,7 +90,5 @@ fig.ext: the extension of the plot files created by the code chunk.\
 ```{r pressure, fig.width=10, fig.hight=4, fig.cap="Fig.1. Vapor Pressure of Mercury as a Function of Temperature"}
 plot(pressure)
 ```
-
-
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
